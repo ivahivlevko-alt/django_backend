@@ -1,5 +1,6 @@
 {% load catalog_extras %}
 <nav>
   <a href="{% url 'product_list' %}">Товари</a>
+  <a href="{% url 'product_add' %}">Додати товар</a>
   <span>Товарів у базі: {% product_count %}</span>
 </nav>
