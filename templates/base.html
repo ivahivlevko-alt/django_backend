@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %}Склад{% endblock %}</title>
+</head>
+<body>
+  {% include 'partials/menu.html' %}
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+  <footer>© Склад</footer>
+</body>
+</html>
