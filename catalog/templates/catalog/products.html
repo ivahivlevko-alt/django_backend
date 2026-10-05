@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load catalog_extras %}
 
 {% block title %}Товари{% endblock %}
 
@@ -7,7 +8,7 @@
 <table>
   <tr><th>Назва</th><th>Ціна</th></tr>
   {% for p in products %}
-    <tr><td>{{ p.name }}</td><td>{{ p.price }}</td></tr>
+    <tr><td>{{ p.name }}</td><td>{{ p.price|uah }}</td></tr>
   {% empty %}
     <tr><td colspan="2">Товарів немає</td></tr>
   {% endfor %}
